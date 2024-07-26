@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SEEr | Zhiling Lan</title>
+    <meta name="author" content="Zhiling  Lan">
+    <meta name="description" content="a Scalable, Energy-Efficient HPC environment for AI-enabled Science">
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+    <link rel="canonical" href="https://alshedivat.github.io/projects/SEEr/">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+    <script src="/assets/js/theme.js?96d6b3e1c3604aca8b6134c7afdd5db6"></script>
+    <script src="/assets/js/dark_mode.js?9b17307bb950ffa2e34be0227f53558f"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/">Zhiling Lan</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">About</a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">Projects</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/software/">Software</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/students/">Students</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">Teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/news/">News</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">SEEr</h1>
+            <p class="post-description">a Scalable, Energy-Efficient HPC environment for AI-enabled Science</p>
+          </header>
+
+          <article>
+            <p>AI-enabled science, where advanced machine-learning technologies are used for surrogate models, auto tuning, and in situ data analysis, is quickly 
+being adopted in science and engineering for tackling complex and challenging computational problems. The wide adoption of heterogeneous systems 
+embedded with different types of processing devices (CPUs, GPUs, and AI accelerators) further complicates the execution of AI-enabled science on 
+supercomputers. The research for AI-enabled simulations on heterogeneous systems is far from sufficient.</p>
+
+<p>The long-term research vision is to develop SEEr, a Scalable, Energy-Efficient HPC environment for scaling up and accelerating AI-enabled science for 
+scientific discovery. This PPoSS planning project explores fundamental questions to realize the research vision. The team focuses on scalable 
+surrogate models for an incompressible computational fluid dynamics application using OpenFOAM, cost models for this application on heterogeneous resources, 
+dynamic task mapping for efficient execution, and performance and power monitoring and characterization to explore tradeoffs among performance, 
+scalability, and energy efficiency on a state-of-the-art heterogeneous testbed at ALCF. The unified team of researchers tackles the problem in a 
+cross-layer manner, focusing on the synergies among application algorithms, programming languages and compilers, runtime systems, and 
+high-performance computing.</p>
+
+<h1 id="faculty">Faculty:</h1>
+<ul>
+  <li>Zhiling Lan, Stefan Muller, Romit Maulik (Illinois Tech)</li>
+  <li>Valerie Taylor, Xingfu Wu (UChicago)</li>
+  <li>Mike Papka (NIU)</li>
+</ul>
+
+<h1 id="students">Students:</h1>
+<ul>
+  <li>Melanie Cornelius (PhD)</li>
+  <li>Hunter Negron (BS/MS)</li>
+  <li>Hannah Greenblatt (BS/MS)</li>
+  <li>Pranjal Naik (MS)</li>
+</ul>
+
+<h1 id="major-project-events">Major project events:</h1>
+<ul>
+  <li>Bi-weekly zoom meeting 4-5pm on Fridays</li>
+  <li>In-person PI meeting at Argonne on May 10th, 2022.</li>
+  <li>In-person research meeting with climate modeling group at Argonne on August 5th, 2022.</li>
+  <li>In-person extended PI meeting at Illinois Tech on Dec. 2nd, 2022.</li>
+</ul>
+
+<h1 id="software-tools">Software Tools:</h1>
+<ul>
+  <li>PythonFOAM: In-situ data analyses with OpenFOAM and Python at Argonne <a href="https://github.com/argonne-lcf/PythonFOAM" rel="external nofollow noopener" target="_blank">Link</a>
+</li>
+  <li>Mantis, a unified performance and power profiling interface on applications running on heterogeneous systems 
+<a href="https://github.com/SPEAR-UIC/mantis" rel="external nofollow noopener" target="_blank">Link</a>
+</li>
+  <li>Two AI-enabled applications (mini-app and PythonFOAM) explored in the SEEr planning project. The codes and run scrips for the heterogeneous CPU-GPU 
+systems at Argonne Leadership Computing Facility (ALCF) are available at the team’s GitHub repository <a href="https://github.com/SPEAR-UIC/SEEr" rel="external nofollow noopener" target="_blank">Link</a>
+</li>
+</ul>
+
+<h1 id="papers-and-reports">Papers and reports:</h1>
+<ul>
+  <li>H. Greenblatt, H. Negron, M. Cornelius, S. Muller, R. Maulik, X. Wu, M. Papka, and V. Taylor, “Performance Characterization of AI-enabled 
+Scientific Applications”, Technical report, August 2022. [pdf]</li>
+  <li>H. Greenblatt, “CS597 Report: Study of PythonFoam on ThetaGPU”, Technical report, Dec 2022. [pdf]</li>
+  <li>H. Negron and P. Naik, “CS597 Report: Mini-App Analysis on Polaris and ThetaGPU”, Technical report, Dec 2022. [pdf]</li>
+  <li>M. Cornelius, H. Greenblatt, and Z. Lan, “Mantis: A Unified Performance and Power Profiling Interface on Heterogeneous Systems”, Technical report, 
+August 2022. [pdf]</li>
+  <li>H. Greenblatt, “CS597 Report: PythonFoam Benchmarking”, Technical report, May 2022. [pdf]</li>
+  <li>H. Negron and Z. Zheng, “CS597 Report: Mini-app Benchmarking”, Technical report, May 2022. [pdf]</li>
+  <li>X. Wu, V. Taylor, and Z. Lan, Performance and Energy Improvement of the ECP Proxy App SW4lite under Various Workloads, SC2021 Workshop on 
+Memory-Centric High Performance Computing (MCHPC’21), Nov. 2021. [pdf]</li>
+  <li>X. Wu, V. Taylor, and Z. Lan, Performance and Power Modeling and Prediction Using MuMMI and Ten Machine Learning Methods, Concurrency and 
+Computation Practice and Experience, August 2022, https://doi.org/10.1002/cpe.7254. [pdf]</li>
+</ul>
+
+<h1 id="acknowledgement">Acknowledgement:</h1>
+<p>This project is supported by the US National Science Foundation (CCF 2119294, 2119203, 2119056). Note: Any opinions, findings, and conclusions or 
+recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
+
+          </article>
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2024 Zhiling  Lan. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js?d633890033921b33e0ceb13d22340a9c"></script>
+  <script defer src="/assets/js/common.js?acdb9690d7641b2f8d40529018c71a01"></script>
+  <script defer src="/assets/js/copy_code.js?c9d9dd48933de3831b3ee5ec9c209cac" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
