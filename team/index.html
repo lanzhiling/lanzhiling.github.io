@@ -231,34 +231,50 @@ IBM Blue Gene/Q”, Proc. of IEEE Cluster’13, 2013.</li>
 Parallel Applications on Torus-Connected Supercomputers”, The Journal of Supercomputing, 2016.</li>
 </ul>
 
-<p><strong>Others:</strong></p>
-<ul>
-  <li>TOPPER, a system-level tradeoff modeling tool for quantitative analysis of performance, power, and resilience on extreme scale
-sstems. It is built on the CPN tools using colored Petri nets. Check the paper:  L. Yu, Z. Zhou, Y. Fan, M.E, Papka, and Z. Lan, “Sytem-Wide Tradeoff Modeling of
-Performance, Power, and Resilience on Petascale Systems”, Journal of Supercomputing, 2018.</li>
-  <li>PuPPET: a power-performance modeling tool for predictive analysis of power management on extreme scale systems. It is built on the CPN tools using colored Petri nets. Check the 
-paper: L. Yu, Z. Zhou, S. Wallace, M.E, Papka, and Z. Lan, “Quantitative Modeling of Power Performance Tradeoffs on Extreme Scale Systems”, Journal of Parallel and Distributed 
-Computing, 2015.</li>
-  <li>SysDP: an automated fault diagnosis and prognosis software toolkit for large-scale systems. It has been tested with RAS (Reliability, Availability, 
-and Serviceability) logs from Blue Gene systems.</li>
-  <li>FT-Pro: an application-level adaptive fault tolerance system for parallel applications. Here, “application-level” means the focus is on reducing 
+<h1 id="spear-in-action">SPEAR in Action</h1>
+
+<div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem;">
+  <img src="/assets/img/ipdps-bp-04a.jpg" alt="Animation 1" style="height: 150px; border-radius: 8px;">
+  <img src="/assets/img/spear_members_2016_dec.jpg" alt="Animation 2" style="height: 150px; border-radius: 8px;">
+  <img src="/assets/img/sc16_1.jpg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
+  <img src="/assets/img/phds2017.jpg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
+  <img src="/assets/img/spear_april_2019.jpg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
+  <img src="/assets/img/IMG_0191.jpeg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
+  <img src="/assets/img/IMG_5497.jpeg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
+  <img src="/assets/img/shovon-defense-2025-3.jpg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
+  <img src="/assets/img/UIC_GCASR25_1.jpg" alt="Animation 3" style="height: 300px; border-radius: 8px;">
+  <img src="/assets/img/UIC_GCASR_dinner.JPG" alt="Animation 3" style="height: 300px; border-radius: 8px;">
+</div>
+
+<!--
+<strong>Others:</strong>
+* TOPPER, a system-level tradeoff modeling tool for quantitative analysis of performance, power, and resilience on extreme scale
+sstems. It is built on the CPN tools using colored Petri nets. Check the paper:  L. Yu, Z. Zhou, Y. Fan, M.E, Papka, and Z. Lan, "Sytem-Wide Tradeoff Modeling of
+Performance, Power, and Resilience on Petascale Systems", Journal of Supercomputing, 2018.
+* PuPPET: a power-performance modeling tool for predictive analysis of power management on extreme scale systems. It is built on the CPN tools using colored Petri nets. Check the 
+paper: L. Yu, Z. Zhou, S. Wallace, M.E, Papka, and Z. Lan, "Quantitative Modeling of Power Performance Tradeoffs on Extreme Scale Systems", Journal of Parallel and Distributed 
+Computing, 2015.
+* SysDP: an automated fault diagnosis and prognosis software toolkit for large-scale systems. It has been tested with RAS (Reliability, Availability, 
+and Serviceability) logs from Blue Gene systems.
+* FT-Pro: an application-level adaptive fault tolerance system for parallel applications. Here, "application-level" means the focus is on reducing 
 application completion time in the presence of failure. It allows applications to avoid anticipated failures via preventive migration, and in the 
-case of unforeseeable failures, to minimize their impact through selective checkpointing. It is implemented with the MPICH-V checkpointing package.</li>
-  <li>FARS: a Fault-Aware Runtime System for system-level adaptive fault tolerance. Here, “system-level” means the primary goal is to improve system 
+case of unforeseeable failures, to minimize their impact through selective checkpointing. It is implemented with the MPICH-V checkpointing package.
+* FARS: a Fault-Aware Runtime System for system-level adaptive fault tolerance. Here, "system-level" means the primary goal is to improve system 
 productivity in the presence of failure. It not only includes runtime strategies to allocate spare nodes for failure avoindance, but also provides a 
 general mechanism to select running jobs for rescheduling in case of resource contention. An event-driven simulator is developed to emulate computing 
-systems using batch scheduler enhanced with FARS. It has been tested with both synthetic data and machine traces collected from production systems.</li>
-  <li>FREM: a Fast REstart Mechanism to improve process recovery for general checkpoint/restart protocols. The core idea is to enable early process 
+systems using batch scheduler enhanced with FARS. It has been tested with both synthetic data and machine traces collected from production systems.
+* FREM: a Fast REstart Mechanism to improve process recovery for general checkpoint/restart protocols. The core idea is to enable early process 
 restart on partial checkpoint image by tracking data access patterns after each checkpoint. A prototype system which implements FREM with the BLCR 
-checkpointing tool is developed. We have tested it with SPEC 2006. [FERM paper on IEEE Trans. on Computers]</li>
-  <li>ParaDLB and DistDLB: Dynamic load balancing methods for large-scale applications using the structured adaptive mesh refinement (SAMR) algorithm. 
-The methods have been implemented and tested in the cosmological simulation code ENZO.</li>
-  <li>SWS (Seismic Wave Simulation): a seismic wave simulation package using finite element method. It can be used not only for theoretical studies of 
+checkpointing tool is developed. We have tested it with SPEC 2006. [FERM paper on IEEE Trans. on Computers]
+* ParaDLB and DistDLB: Dynamic load balancing methods for large-scale applications using the structured adaptive mesh refinement (SAMR) algorithm. 
+The methods have been implemented and tested in the cosmological simulation code ENZO.
+* SWS (Seismic Wave Simulation): a seismic wave simulation package using finite element method. It can be used not only for theoretical studies of 
 seismic waive propagation, but also for engineers engaged in seismic data acquisition, processing, interpretation and use of the inversion. The tool 
 can be used to numerically solve any combination of acoustic wave equation, isotropic and anisotropic elastic wave equation, two-phase media wave 
 equation. It was developed by Zhiling Lan and Xiumin Shao at Chinese Academia of Sciences during 1993-1997. The software was purchased and used by 
-China National Petroleum Corporation.</li>
-</ul>
+China National Petroleum Corporation.
+-->
+
 
           </article>
 </div>
