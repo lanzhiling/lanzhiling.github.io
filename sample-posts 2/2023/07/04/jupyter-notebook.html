@@ -10,10 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Team | Zhiling Lan</title>
+    <title>a post with jupyter notebook | Zhiling Lan</title>
     <meta name="author" content="Zhiling  Lan">
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-">
+    <meta name="description" content="an example of a blog post with jupyter notebook">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -39,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-    <link rel="canonical" href="https://alshedivat.github.io/team/">
+    <link rel="canonical" href="https://alshedivat.github.io/sample-posts/2023/07/04/jupyter-notebook.html">
 
     <!-- Dark Mode -->
     
@@ -78,8 +77,8 @@
               
 
               <!-- Other pages -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/team/">Team<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="/team/">Team</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/projects/">Projects</a>
@@ -121,131 +120,59 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- page.html -->
-        <div class="post">
+        <!-- _layouts/post.html -->
 
-          <header class="post-header">
-            <h1 class="post-title">Team</h1>
-            <p class="post-description"></p>
-          </header>
+<div class="post">
 
-          <article>
-            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
-  <img src="/assets/img/SPEAR-UIC-logo-black.png" alt="SPEAR Logo" style="height: 120px; max-width: 100%; object-fit: contain;">
-  <div>
-    <h1 style="margin: 0;">SPEAR</h1>
-    <p style="margin: 0; font-size: 0.9rem; color: #555;">
-      Systems for Performance, Energy, and Resiliency
+  <header class="post-header">
+    <h1 class="post-title">a post with jupyter notebook</h1>
+    <p class="post-meta">July 4, 2023</p>
+    <p class="post-tags">
+      <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+        ·  
+        <a href="/blog/tag/formatting">
+          <i class="fas fa-hashtag fa-sm"></i> formatting</a>  
+          <a href="/blog/tag/jupyter">
+          <i class="fas fa-hashtag fa-sm"></i> jupyter</a>  
+          
+        ·  
+        <a href="/blog/category/sample-posts">
+          <i class="fas fa-tag fa-sm"></i> sample-posts</a>  
+          
+
     </p>
-  </div>
-</div>
+  </header>
 
-<h1 id="overview">Overview</h1>
-<p>
-The SPEAR team conducts research across diverse areas of parallel and distributed systems,  including cluster management, interconnection networking, performance modeling and simulation, power and energy efficiency, and fault tolerance.
-Our mission is to unify high-performance computing (HPC) and artificial intelligence (AI). We are dedicated to building HPC systems that accelerate AI applications (<strong>HPC4AI</strong>) 
-and to leveraging advanced AI technologies to address key research challenges in HPC (<strong>AI4HPC</strong>).
-</p>
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p>To include a jupyter notebook in a post, you can use the following code:</p>
 
-<h1 id="members">Members</h1>
-<ul>
-  <li>Zhiling Lan (Professor)</li>
-  <li>
-    <p>Mike Papka (Professor)</p>
-  </li>
-  <li>Xin Wang (Postdoc at UIC)</li>
-  <li>
-    <p>Yuping Fan (Postdoc at ANL)</p>
-  </li>
-  <li>Melanie Cornelius (PhD)</li>
-  <li>Matthew Dearing (PhD)</li>
-  <li>Zhong Zheng (PhD)</li>
-  <li>Greg Cross (PhD)</li>
-  <li>Yash Kurkure (PhD)</li>
-  <li>Chris Grams (PhD)</li>
-  <li>Amy Byrnes (PhD)</li>
-  <li>Yihe (Jordan) Zhang (PhD)</li>
-  <li>Yiheng Tao (PhD)</li>
-  <li>Maisy	Dunlavy (PhD)</li>
-  <li>Kanglin Xu (PhD)</li>
-  <li>Can Bagirgan (PhD)</li>
-  <li>Aldo Cabrera (PhD)</li>
-  <li>Akshar Patel (PhD)</li>
-  <li>Niccolo Brembilla (PhD)</li>
-  <li>Giacomo Brunetta (PhD)</li>
-  <li>Vincent Chirio (PhD)</li>
-  <li>Jennifer Coburn (PhD)</li>
-  <li>Edoardo D’Alessio (PhD, co-advised with Prof Xiaoguang Wang)</li>
-  <li>
-    <p>Hao Liu (PhD)</p>
-  </li>
-  <li>Kim Meagher (MS)</li>
-  <li>Vittorio Palladino (MS)</li>
-</ul>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{::nomarkdown}
+{% assign jupyter_path = "assets/jupyter/blog.ipynb" | relative_url %}
+{% capture notebook_exists %}{% file_exists assets/jupyter/blog.ipynb %}{% endcapture %}
+{% if notebook_exists == "true" %}
+    {% jupyter_notebook jupyter_path %}
+{% else %}
+    <span class="nt">&lt;p&gt;</span>Sorry, the notebook you are looking for does not exist.<span class="nt">&lt;/p&gt;</span>
+{% endif %}
+{:/nomarkdown}
+</code></pre></div></div>
 
-<h1 id="collaborators">Collaborators</h1>
-<p>We have a close partnership with several research teams at ANL, including the ALCF Operations team and the performance team led by Valerie Taylor.</p>
+<p>Let’s break it down: this is possible thanks to <a href="https://github.com/red-data-tools/jekyll-jupyter-notebook" rel="external nofollow noopener" target="_blank">Jekyll Jupyter Notebook plugin</a> that allows you to embed jupyter notebooks in your posts. It basically calls <a href="https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html" rel="external nofollow noopener" target="_blank"><code class="language-plaintext highlighter-rouge">jupyter nbconvert --to html</code></a> to convert the notebook to an html page and then includes it in the post. Since <a href="https://jekyllrb.com/docs/configuration/markdown/" rel="external nofollow noopener" target="_blank">Kramdown</a> is the default Markdown renderer for Jekyll, we need to surround the call to the plugin with the <a href="https://kramdown.gettalong.org/syntax.html#extensions" rel="external nofollow noopener" target="_blank">::nomarkdown</a> tag so that it stops processing this part with Kramdown and outputs the content as-is.</p>
 
-<h1 id="software">Software</h1>
-<p>We actively develop and maintain open-source software on <a href="https://github.com/SPEAR-UIC/" rel="external nofollow noopener" target="_blank">SPEAR GitHub</a>. Several representative tools are listed below:</p>
-
-<ul>
-  <li>CQSim:  an event-driven scheduling simulator designed for rapid what-if exploration of scheduling scenarios.</li>
-  <li>Q-adaptive: a multi-agent reinforcement learning driven routing design for Dragonfly networks.</li>
-  <li>MFNetSim: a hybrid network simulation framework for joint MPI and I/O modeling on Dragonfly systems.</li>
-  <li>MAGUS: a system-level library for adaptive uncore scaling that minimizes power waste on heterogeneous CPU-GPU systems.</li>
-  <li>SMART: a hybrid GNN+LLM surrogate model for predicting application runtime on Dragonfly systems.</li>
-  <li>DNPC: a user-level dynamic power capping library for parallel applications.</li>
-</ul>
-
-<h1 id="spear-in-action">SPEAR in Action</h1>
-
-<div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem;">
-  <img src="/assets/img/ipdps-bp-04a.jpg" alt="Animation 1" style="height: 150px; border-radius: 8px;">
-  <img src="/assets/img/spear_members_2016_dec.jpg" alt="Animation 2" style="height: 150px; border-radius: 8px;">
-  <img src="/assets/img/sc16_1.jpg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
-  <img src="/assets/img/phds2017.jpg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
-  <img src="/assets/img/spear_april_2019.jpg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
-  <img src="/assets/img/IMG_0191.jpeg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
-  <img src="/assets/img/IMG_5497.jpeg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
-  <img src="/assets/img/shovon-defense-2025-3.jpg" alt="Animation 3" style="height: 150px; border-radius: 8px;">
-  <img src="/assets/img/gcasr2024.jpeg" alt="Animation 3" style="height: 300px; border-radius: 8px;">
-  <img src="/assets/img/UIC_GCASR25_1.jpg" alt="Animation 3" style="height: 300px; border-radius: 8px;">
-  <img src="/assets/img/UIC_GCASR_dinner.JPG" alt="Animation 3" style="height: 300px; border-radius: 8px;">
-  <img src="/assets/img/SPEAR-Aug-2025.jpg" alt="Animation 3" style="height: 300px; border-radius: 8px;">
-</div>
-
-<!--
-<strong>Others:</strong>
-* TOPPER, a system-level tradeoff modeling tool for quantitative analysis of performance, power, and resilience on extreme scale
-sstems. It is built on the CPN tools using colored Petri nets. Check the paper:  L. Yu, Z. Zhou, Y. Fan, M.E, Papka, and Z. Lan, "Sytem-Wide Tradeoff Modeling of
-Performance, Power, and Resilience on Petascale Systems", Journal of Supercomputing, 2018.
-* PuPPET: a power-performance modeling tool for predictive analysis of power management on extreme scale systems. It is built on the CPN tools using colored Petri nets. Check the 
-paper: L. Yu, Z. Zhou, S. Wallace, M.E, Papka, and Z. Lan, "Quantitative Modeling of Power Performance Tradeoffs on Extreme Scale Systems", Journal of Parallel and Distributed 
-Computing, 2015.
-* SysDP: an automated fault diagnosis and prognosis software toolkit for large-scale systems. It has been tested with RAS (Reliability, Availability, 
-and Serviceability) logs from Blue Gene systems.
-* FT-Pro: an application-level adaptive fault tolerance system for parallel applications. Here, "application-level" means the focus is on reducing 
-application completion time in the presence of failure. It allows applications to avoid anticipated failures via preventive migration, and in the 
-case of unforeseeable failures, to minimize their impact through selective checkpointing. It is implemented with the MPICH-V checkpointing package.
-* FARS: a Fault-Aware Runtime System for system-level adaptive fault tolerance. Here, "system-level" means the primary goal is to improve system 
-productivity in the presence of failure. It not only includes runtime strategies to allocate spare nodes for failure avoindance, but also provides a 
-general mechanism to select running jobs for rescheduling in case of resource contention. An event-driven simulator is developed to emulate computing 
-systems using batch scheduler enhanced with FARS. It has been tested with both synthetic data and machine traces collected from production systems.
-* FREM: a Fast REstart Mechanism to improve process recovery for general checkpoint/restart protocols. The core idea is to enable early process 
-restart on partial checkpoint image by tracking data access patterns after each checkpoint. A prototype system which implements FREM with the BLCR 
-checkpointing tool is developed. We have tested it with SPEC 2006. [FERM paper on IEEE Trans. on Computers]
-* ParaDLB and DistDLB: Dynamic load balancing methods for large-scale applications using the structured adaptive mesh refinement (SAMR) algorithm. 
-The methods have been implemented and tested in the cosmological simulation code ENZO.
-* SWS (Seismic Wave Simulation): a seismic wave simulation package using finite element method. It can be used not only for theoretical studies of 
-seismic waive propagation, but also for engineers engaged in seismic data acquisition, processing, interpretation and use of the inversion. The tool 
-can be used to numerically solve any combination of acoustic wave equation, isotropic and anisotropic elastic wave equation, two-phase media wave 
-equation. It was developed by Zhiling Lan and Xiumin Shao at Chinese Academia of Sciences during 1993-1997. The software was purchased and used by 
-China National Petroleum Corporation.
--->
+<p>The plugin takes as input the path to the notebook, but it assumes the file exists. If you want to check if the file exists before calling the plugin, you can use the <code class="language-plaintext highlighter-rouge">file_exists</code> filter. This avoids getting a 404 error from the plugin and ending up displaying the main page inside of it instead. If the file does not exist, you can output a message to the user. The code displayed above outputs the following:</p>
 
 
-          </article>
+
+
+    <p>Sorry, the notebook you are looking for does not exist.</p>
+
+
+<p>Note that the jupyter notebook supports both light and dark themes.</p>
+
+    </div>
+  </article>
 </div>
 
       
